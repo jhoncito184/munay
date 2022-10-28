@@ -1,0 +1,907 @@
+.home-header {
+    header {
+        position: relative;
+    }
+}
+
+.home {
+    padding: 0 80px;
+    position: relative;
+    color: #44534A;
+
+    @media (max-width: 1440px) {
+        padding: 0 80px;
+    }
+
+    @media (max-width: 1024px) {
+        padding: 0 40px;
+    }
+
+    @include bp(baby) {
+        padding: 0;
+    }
+
+    &__banner {
+        // height: 100vh;
+        display: flex;
+        margin: 300px 0;
+        align-items: center;
+        font-family: 'ACaslonPro-Regular';
+        position: relative;
+        color: #FFF;
+
+        @media (max-width: 2560px) {
+            margin: 500px 0;
+        }
+
+        @media (max-width: 1920px) {
+            margin: 300px 0;
+        }
+
+        @media (max-width: 1520px) {
+            margin: 180px 0;
+        }
+
+        @media (max-width: 1024px) {
+            margin: 90px 0;
+        }
+
+        @media (max-width: 768px) {
+            margin: 30px 0;
+            align-items: flex-end;
+            padding: 0 30px;
+        }
+
+        @media (max-width: 430px) {
+            margin: 350px 0;
+            margin-bottom: 60px;
+        }
+
+        @media (max-width: 375px) {
+            margin: 280px 0;
+            align-items: flex-end;
+            padding: 0 30px;
+            margin-bottom: 80px;
+        }
+
+        @media (max-width: 320px) {
+            margin: 90px 0;
+        }
+
+        &_box {
+            max-width: 450px;
+
+            @media (max-width: 1024px) {
+                max-width: 400px;
+            }
+
+            @include bp(baby) {
+                margin-bottom: 80px;
+            }
+
+            @media (max-width: 420px) {
+                margin-bottom: 40px;
+            }
+
+            @media (max-width: 320px) {
+                margin-bottom: 0;
+            }
+
+            .title {
+                font-size: 20px;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+
+                @media (max-width: 1440px) {
+                    font-size: 22px;
+                }
+
+                @media (max-width: 1024px) {
+                    font-size: 18px;
+                }
+            }
+
+            .subtitle {
+                font-family: 'MonumentGrotesk-Semi-Mono';
+                font-size: 14px;
+                line-height: 20px;
+
+                @media (max-width: 1440px) {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+
+                @media (max-width: 1024px) {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+
+                @include bp(baby) {
+                    font-size: 12px;
+                    line-height: 17px;
+                }
+
+                @media (max-width: 320px) {
+                    font-size: 11px;
+                    line-height: 15px;
+                }
+            }
+        }
+
+        &_allrights {
+            position: absolute;
+            bottom: 20px;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__section-01 {
+        display: flex;
+        align-items: center;
+        font-family: 'ACaslonPro-Regular';
+        padding: 300px 0 0;
+
+        @media (max-width: 1520px) {
+            padding: 200px 0 0;
+        }
+
+        @media (max-width: 1440px) {
+            padding: 250px 0 0;
+        }
+
+        @media (max-width: 1024px) {
+            padding: 100px 0 0;
+        }
+
+        @include bp(baby) {
+            width: 100%;
+            padding: 100px 0 0;
+        }
+
+        @media (max-width: 430px) {
+            padding: 120px 0 0;
+        }
+
+        @media (max-width: 375px) {
+            padding: 80px 0 0;
+        }
+
+        @media (max-width: 320px) {
+            padding: 185px 0 0;
+        }
+
+        &_box {
+            width: 800px;
+            max-width: 50%;
+            margin-left: auto;
+
+            @media (max-width: 1520px) {
+                max-width: 40%;
+            }
+
+            @media (max-width: 1440px) {
+                max-width: 40%;
+            }
+
+            @media (max-width: 1024px) {
+                max-width: 40%;
+            }
+            
+            @include bp(baby) {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .description {
+                position: relative;
+                display: block;
+                margin-bottom: 160px;
+
+                @media (max-width: 2560px) {
+                    margin-bottom: 320px;
+                }
+
+                @media (max-width: 1920px) {
+                    margin-bottom: 160px;
+                }
+
+                @media (max-width: 1520px) {
+                    margin-bottom: 100px;
+                }
+
+                @media (max-width: 1440px) {
+                    margin-bottom: 120px;
+                }
+
+                @media (max-width: 1024px) {
+                    margin-bottom: 50px;
+                }
+
+                @media (max-width: 768px) {
+                    margin-bottom: 120px;
+                }
+
+                @media (max-width: 430px) {
+                    margin-bottom: 60px;
+                }
+
+                @media (max-width: 360px) {
+                    margin-bottom: 40px;
+                }
+
+                @media (max-width: 320px) {
+                    margin-bottom: 30px;
+                }
+
+                &__text {
+                    @media (max-width: 768px) {
+                        width: 280px;
+                        margin-left: auto;
+                        padding: 0 30px 0 0;
+                    }
+
+                    @media (max-width: 430px) {
+                        width: 220px;
+                        margin-left: auto;
+                        padding: 0 30px 0 0;
+                    }
+
+                    @media (max-width: 320px) {
+                        width: 190px;
+                    }
+                }
+
+                &__title {
+                    font-size: 30px;
+                    line-height: 120%;
+                    margin-top: 60px;
+                    margin-bottom: 10px;
+
+                    @media (max-width: 2560px) {
+                        margin-top: 200px;
+                    }
+
+                    @media (max-width: 1920px) {
+                        margin-top: 60px;
+                    }
+
+                    @media (max-width: 1440px) {
+                        font-size: 30px;
+                        margin-top: 45px;
+                    }
+
+                    @media (max-width: 1024px) {
+                        font-size: 28px;
+                    }
+
+                    @include bp(baby) {
+                        font-size: 20px;
+                        line-height: 26px;
+                    }
+
+                    @media (max-width: 320px) {
+                        font-size: 18px;
+                        line-height: 20px;
+                    }
+                }
+
+                &__subtitle {
+                    font-family: 'MonumentGrotesk-Semi-Mono';
+                    font-size: 14px;
+                    line-height: 20px;
+
+                    @media (max-width: 1440px) {
+                        font-size: 12px;
+                        line-height: 15px;
+                    }
+
+                    @media (max-width: 1024px) {
+                        font-size: 11px;
+                        line-height: 16px;
+                    }
+
+                    @include bp(baby) {
+                        font-size: 12px;
+                        line-height: 17px;
+                    }
+
+                    @media (max-width: 320px) {
+                        font-size: 11px;
+                        line-height: 15px;
+                    }
+                }
+
+                &__image {
+                    display: block;
+
+                    @media (max-width: 768px) {
+                        height: 450px;
+                        position: relative;
+                    }
+                    
+                    @media (max-width: 430px) {
+                        height: 300px;
+                        position: relative;
+                    }
+                    @media (max-width: 420px) {
+                        height: 250px;
+                        position: relative;
+                    }
+
+                    img {
+                        width: 100%;
+
+                        @include bp(baby) {
+                            object-position: center;
+                            z-index: 1;
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                            position: absolute;
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                    max-width: 600px;
+                    margin-left: auto;
+
+                    .description__title {
+                        letter-spacing: 5px;
+
+                        @media (max-width: 1520px) {
+                            margin-top: 20px;
+                        }
+
+                        @include bp(baby) {
+                            letter-spacing: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__section-02 {
+        display: flex;
+        align-items: center;
+        font-family: 'ACaslonPro-Regular';
+        padding: 150px 0;
+
+        @media (max-width: 1520px) {
+            padding: 50px 0;
+        }
+
+        @media (max-width: 1440px) {
+            padding: 60px 0;
+        }
+
+        @media (max-width: 1024px) {
+            padding: 20px 0;
+        }
+
+        @media (max-width: 430px) {
+            padding: 50px 0 20px;
+        }
+
+        @media (max-width: 390px) {
+            padding: 20px 0 20px;
+        }
+
+        @media (max-width: 375px) {
+            padding: 0 0 20px;
+        }
+
+        @media (max-width: 360px) {
+            padding: 0 0 20px;
+        }
+
+        &_box {
+            width: 800px;
+            max-width: 50%;
+            margin-left: auto;
+
+            @media (max-width: 1520px) {
+                max-width: 40%;
+            }
+
+            @media (max-width: 1440px) {
+                width: 40%;
+            }
+
+            @include bp(baby) {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .description {
+                position: relative;
+                display: block;
+                margin-bottom: 50px;
+
+                @media (max-width: 2560px) {
+                    margin-bottom: 150px;
+                }
+
+                @media (max-width: 1920px) {
+                    margin-bottom: 50px;
+                }
+
+                @media (max-width: 1520px) {
+                    margin-bottom: 70px;
+                }
+
+                @media (max-width: 1024px) {
+                    margin-bottom: 40px;
+                }
+
+                @media (max-width: 420px) {
+                    margin-bottom: 0;
+                }
+
+                &__text {
+                    @media (max-width: 768px) {
+                        width: 280px;
+                        margin-left: auto;
+                        padding: 0 30px 0 0;
+                    }
+
+                    @media (max-width: 430px) {
+                        width: 220px;
+                        margin-left: auto;
+                        padding: 0 30px 0 0;
+                    }
+
+                    @media (max-width: 320px) {
+                        width: 190px;
+                    }
+                }
+
+                &__title {
+                    width: 530px;
+                    margin-left: auto;
+                    font-size: 30px;
+                    line-height: 120%;
+                    margin-top: 60px;
+                    margin-bottom: 10px;
+
+                    @media (max-width: 2560px) {
+                        margin-top: 200px;
+                    }
+
+                    @media (max-width: 1920px) {
+                        margin-top: 60px;
+                    }
+
+                    @media (max-width: 1440px) {
+                        width: 400px;
+                        font-size: 30px;
+                        margin-top: 45px;
+                    }
+
+                    @media (max-width: 1024px) {
+                        font-size: 28px;
+                    }
+
+                    @include bp(baby) {
+                        width: 100%;
+                        font-size: 20px;
+                        line-height: 26px;
+                    }
+
+                    @media (max-width: 320px) {
+                        font-size: 18px;
+                        line-height: 20px;
+                    }
+                }
+
+                &__subtitle {
+                    width: 530px;
+                    margin-left: auto;
+                    margin-top: 50px;
+                    font-family: 'MonumentGrotesk-Semi-Mono';
+                    font-size: 14px;
+                    line-height: 20px;
+
+                    @media (max-width: 1440px) {
+                        width: 400px;
+                        margin-top: 25px;
+                        font-size: 12px;
+                        line-height: 15px;
+                    }
+
+                    @media (max-width: 1024px) {
+                        font-size: 11px;
+                        line-height: 16px;
+                    }
+
+                    @include bp(baby) {
+                        width: 100%;
+                        margin-top: 20px;
+                        line-height: 17px;
+                    }
+
+                    @media (max-width: 360px) {
+                        margin-top: 20px;
+                    }
+
+                    @media (max-width: 320px) {
+                        font-size: 11px;
+                        line-height: 15px;
+                        margin-top: 20px;
+                    }
+                }
+
+                &__image {
+                    display: block;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                &:nth-child(2) {
+                    max-width: 600px;
+                    margin-left: auto;
+
+                    .description__title {
+                        letter-spacing: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__section-03 {
+        display: flex;
+        align-items: center;
+        font-family: 'ACaslonPro-Regular';
+        padding: 120px 0 0;
+
+        @media (max-width: 1520px) {
+            padding: 80px 0;
+        }
+
+        @media (max-width: 1440px) {
+            padding: 80px 0 0;
+        }
+
+        @media (max-width: 1024px) {
+            padding: 0;
+        }
+
+        @media (max-width: 430px) {
+            margin-bottom: 100px;
+            padding: 0;
+        }
+
+        @media (max-width: 420px) {
+            padding: 120px 0 0;
+        }
+
+        @media (max-width: 390px) {
+            padding: 40px 0 0;
+        }
+
+        @media (max-width: 360px) {
+            padding: 20px 0 0;
+        }
+
+        &_box {
+            width: 800px;
+            max-width: 50%;
+            margin-left: auto;
+
+            @media (max-width: 1520px) {
+                max-width: 40%;
+            }
+
+            @media (max-width: 1440px) {
+                width: 40%;
+            }
+
+            @include bp(baby) {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .description {
+                position: relative;
+                display: block;
+                margin-bottom: 150px;
+
+                @media (max-width: 1440px) {
+                    margin-bottom: 50px;
+                }
+
+                @media (max-width: 1024px) {
+                    margin-bottom: 50px;
+                }
+
+                &__text {
+                    @media (max-width: 768px) {
+                        width: 280px;
+                        margin-left: auto;
+                        padding: 0 30px 0 0;
+                    }
+
+                    @media (max-width: 430px) {
+                        width: 220px;
+                        margin-left: auto;
+                        padding: 0 30px 60px 0;
+                    }
+
+                    @media (max-width: 420px) {
+                        width: 220px;
+                        margin-left: auto;
+                        padding: 0 30px 20px 0;
+                    }
+
+                    @media (max-width: 320px) {
+                        width: 190px;
+                        padding: 0 30px;
+                    }
+                }
+
+                &__subtitle {
+                    width: 530px;
+                    margin-left: auto;
+                    margin-bottom: 65px;
+                    font-family: 'MonumentGrotesk-Semi-Mono';
+                    font-size: 14px;
+                    line-height: 20px;
+
+                    @media (max-width: 2560px) {
+                        margin-bottom: 320px;
+                    }
+
+                    @media (max-width: 1920px) {
+                        margin-bottom: 65px;
+                    }
+
+                    @media (max-width: 1440px) {
+                        width: 100%;
+                        max-width: 400px;
+                        margin-top: 25px;
+                        font-size: 12px;
+                        line-height: 15px;
+                    }
+
+                    @media (max-width: 1024px) {
+                        font-size: 11px;
+                        line-height: 16px;
+                    }
+
+                    @include bp(baby) {
+                        width: 100%;
+                        line-height: 17px;
+                    }
+
+                    @media (max-width: 360px) {
+                        margin-bottom: 20px;
+                    }
+                }
+
+                &__image {
+                    display: block;
+
+                    @media (max-width: 430px) {
+                        margin: 0;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                &:nth-child(2) {
+                    max-width: 600px;
+                    margin-left: auto;
+
+                    .description__title {
+                        letter-spacing: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__section-04 {
+        display: flex;
+        align-items: center;
+        font-family: 'ACaslonPro-Regular';
+        padding: 100px 0 140px;
+
+        @media (max-width: 2560px) {
+            padding: 300px 0 140px;
+        }
+
+        @media (max-width: 1920px) {
+            padding: 100px 0 140px;
+        }
+
+        @media (max-width: 1440px) {
+            padding: 150px 0 0;
+        }
+
+        @media (max-width: 1024px) {
+            padding: 40px 0 0;
+        }
+
+        @media (max-width: 768px) {
+            padding: 20px 0 0;
+        }
+
+        @media (max-width: 430px) {
+            padding: 300px 0 0 ;
+        }
+
+        @media (max-width: 420px) {
+            padding: 120px 0 0;
+        }
+        
+        @media (max-width: 390px) {
+            padding: 60px 0 0;
+        }
+
+        @media (max-width: 375px) {
+            padding: 60px 0 0;
+        }
+
+        @media (max-width: 360px) {
+            padding: 40px 0 0;
+        }
+
+        @media (max-width: 320px) {
+            padding: 140px 0 0;
+        }
+
+        &_box {
+            width: 800px;
+            margin-left: auto;
+
+            @media (max-width: 1440px) {
+                width: 40%;
+            }
+
+            @media (max-width: 768px) {
+                width: 100%;
+                max-width: 100%;
+                padding: 20px 30px 60px;
+            }
+
+            @media (max-width: 420px) {
+                width: 100%;
+                max-width: 100%;
+                padding: 30px 30px 40px;
+            }
+
+            @media (max-width: 320px) {
+                padding: 0 30px 20px;
+            }
+
+            .description {
+                position: relative;
+                display: block;
+                margin-bottom: 210px;
+                max-width: 530px;
+                width: 100%;
+                margin-left: auto;
+
+                @media (max-width: 1520px) {
+                    margin-bottom: 100px;
+                }
+
+                @media (max-width: 1440px) {
+                    margin-bottom: 70px;
+                    max-width: 400px;
+                }
+
+                @media (max-width: 1024px) {
+                    margin-bottom: 70px;
+                }
+
+                @include bp(baby) {
+                    max-width: 100%;
+                }
+
+                &__text {
+                    @include bp(baby) {
+                        width: 100%;
+                    }
+                }
+
+                &__title {
+                    font-size: 30px;
+                    line-height: 120%;
+                    margin-bottom: 10px;
+
+                    @media (max-width: 1440px) {
+                        font-size: 30px;
+                    }
+
+                    @media (max-width: 1024px) {
+                        font-size: 28px;
+                    }
+
+                    @include bp(baby) {
+                        font-size: 20px;
+                    }
+                }
+
+                &__subtitle {
+                    font-family: 'MonumentGrotesk-Semi-Mono';
+                    font-size: 14px;
+                    line-height: 20px;
+
+                    @media (max-width: 1440px) {
+                        font-size: 12px;
+                    }
+
+                    @media (max-width: 1024px) {
+                        font-size: 11px;
+                        line-height: 15px;
+                    }
+
+                    @include bp(baby) {
+                        font-size: 12px;
+                        line-height: 17px;
+                    }
+
+                    @media (max-width: 320px) {
+                        font-size: 11px;
+                        line-height: 15px;
+                    }
+                }
+
+                &__image {
+                    display: block;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                &:nth-child(2) {
+                    max-width: 600px;
+                    margin-left: auto;
+
+                    .description__title {
+                        letter-spacing: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__section-05 {
+        font-family: 'ACaslonPro-Regular';
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 70px;
+
+        @media (max-width: 2560px) {
+            margin-top: 100px;
+        }
+
+        @media (max-width: 1920px) {
+            margin-top: 0px;
+        }
+
+        @include bp(baby) {
+            font-size: 14px;
+        }
+
+        a {
+            color: #44534A;
+            text-decoration: underline;
+
+            &:hover {
+                color: #44534A;
+            }
+        }
+    }
+
+}

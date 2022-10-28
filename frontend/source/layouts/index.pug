@@ -1,0 +1,19 @@
+extends extends/base
+    
+block content
+    - header_white = true
+    - pestana_nosotros = 'active'
+
+    .home-header
+        include extends/background
+        include extends/header
+    .home
+        include includes/home/banner
+        include includes/home/section-01
+        include includes/home/section-02
+        include includes/home/section-03
+        include includes/home/section-04
+        include includes/home/section-05
+    include extends/footer
+    
+block bottom

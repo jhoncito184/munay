@@ -1,0 +1,37 @@
+.footer
+    .footer__content 
+        .footer__content_title
+            | ¿Eres un hotel o restaurante y quieres afiliarte? Sé parte del ecosistema Munay
+        .footer__content_box 
+            form.affiliate(id="update_register" name="update_register" role="form" action="sendMail.php" method="post")
+                //- .affiliate__input 
+                //-     input(type="email" name="email_footer" placeholder="Ingresa tu e-mail aquí")#email_footer
+                //-     .affiliate__button
+                //-         input(class="actualizar_datos" type="submit" name="submit" value='')#submit
+                            
+                .affiliate__contact 
+                    | O sigamos en Contacto a través de nuestras redes sociales
+                    | #[br] Síguenos en #[a(href="https://m.facebook.com/aguamunay-103392141613239/posts/?ref=page_internal&mt_nav=0" target="_blank") Facebook]  ,  #[a(href="https://www.instagram.com/aguamunay/?hl=es" target="_blank") Instagram]
+            
+            ul.tab
+                li
+                    a(href='#' class=pestana_nosotros) Nosotros
+                li
+                    a(href='#' class=pestana_beneficios) Beneficios
+                    a.opac(href='#' class=pestana_beneficios) Beneficios
+                li
+                    a(href='#' class=pestana_medio) Medio Ambiente
+                    a.opac(href='#' class=pestana_medio) Medio Ambiente
+                li
+                    a(href='#' class=pestana_tecnologia) Tecnología
+                    a.opac(href='#' class=pestana_tecnologia) Fases
+                li
+                    a(href='#' class=pestana_clientes) Clientes y Beneficios
+                    a.opac(href='#' class=pestana_clientes) Reseñas
+                    a.opac(href='#' class=pestana_clientes) Noticias
+        .footer__content_allrights
+            .date © 2021, Munay. All Rights Reserved.
+            .site © Site by Sandhaus, 2021
+
+//- a.buttonWsp(href='https://api.whatsapp.com/send?phone=51955584818&text=Buenos%20días,%20deseo%20recibir%20más%20información%20acerca%20de%20los%20equipos%20purificadores%20de%20agua%20Aqualogic.' target='_blank')
+//-     i.fa.fa-whatsapp.my-buttonWsp

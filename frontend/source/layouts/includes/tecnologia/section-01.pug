@@ -1,0 +1,56 @@
+.tecnologia__section-01
+    .tecnologia__section-01_content
+        .box 
+            .box__image 
+                picture
+                    source(srcset="images/tec_02_mobile.png" media="(max-width: 767px) and (orientation: portrait)")
+                    source(srcset="images/tec_02_mobile.png" media="(max-width: 767px) and (orientation: landscape)")
+                    source(srcset="images/tec_02.png" media="(min-width: 768px) and (max-width: 1000px)")
+                    source(srcset="images/tec_02.png" media="(min-width: 1001px) and (max-width: 1440px)")
+                    source(srcset="images/tec_02.png" media="(min-width: 1441px)")
+                    img(src="images/tec_02.png").picture
+        .box 
+            - 
+                tecnologia_data = [
+                    {
+                        number: '(i)',
+                        question: 'Primera fase',
+                        answer: 'Prefiltro de sedimento que elimina microorganismos, sedimentos y arena',
+                    },
+                    {
+                        number: '(ii)',
+                        question: 'Segunda fase',
+                        answer: 'Membrana de sedimentos elimina el 99% de los microorganismos, sedimentos, y arena.',
+                    },
+                    {
+                        number: '(iii)',
+                        question: 'Tercera fase',
+                        answer: 'Carbón Activado, que elimina el cloro, olores, sabores y partículas como metales y plomo.',
+                    },
+                    {
+                        number: '(iv)',
+                        question: 'Cuarta fase',
+                        answer: 'Ultrafiltración. Pulido de agua por medio de una membrana que reduce los químicos orgánicos, volátiles y bacterias.',
+                    },
+                    {
+                        number: '(v)',
+                        question: 'Quinta fase',
+                        answer: 'Post Carbón. Protección extra contra el cloro, olores, sabores y estabilización de los minerales importantes que revitalizan tu cuerpo.',
+                    },
+                    {
+                        number: '(vi)',
+                        question: 'Sexta fase',
+                        answer: 'Luz Ultravioleta. Sistema de purificación avanzado con el que se eliminan las bacterias que puedan venir en el en el agua',
+                    },
+                ]
+
+            .box__list
+                .box__list_title (Fases del proceso de purificación)
+                .box__list_accordion
+                    each data in tecnologia_data
+                        button.accordion 
+                            .accordion__number !{data.number}
+                            .accordion__text !{data.question}
+                        .panel
+                            p !{data.answer}
+

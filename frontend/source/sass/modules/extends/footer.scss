@@ -1,0 +1,187 @@
+.footer {
+    position: relative;
+    background: #44534A;
+
+    &__content {
+        position: relative;
+        padding: 70px 80px 30px;
+        color: #DAE0D3;
+
+        @media (max-width: 1440px) {
+            padding: 50px 80px 30px;
+        }
+
+        @media (max-width: 1024px) {
+            padding: 50px 40px 20px;
+        }
+
+        &_title {
+            width: 30%;
+            font-size: 28px;
+            line-height: 120%;
+
+            @media (max-width: 1440px) {
+                font-size: 28px;
+            }
+
+            @media (max-width: 1024px) {
+                font-size: 22px;
+            }
+
+            @include bp(baby) {
+                width: 100%;
+            }
+        }
+
+        &_box {
+            display: flex;
+            align-items: baseline;
+
+            @include bp(baby) {
+                display: block;
+            }
+
+            .affiliate {
+                margin-top: 30px;
+                display: block;
+                width: 30%;
+
+                @include bp(baby) {
+                    width: 100%;
+                }
+
+                &__input {
+                    font-family: 'MonumentGrotesk-Semi-Mono';
+                    position: relative;
+                    width: 75%;
+                    border-bottom: 1px solid #ECEFE8;
+
+                    @include bp(baby) {
+                        width: 100%;
+                    }
+
+                    input {
+                        width: 85%;
+                        color: #DAE0D3;
+                        background: transparent;
+                        border: 0;
+                        padding: 0;
+                        font-size: 12px;
+
+                        @media (max-width: 1024px) {
+                            font-size: 12px;
+                        }
+
+                        &::placeholder {
+                            color: #ECEFE8;
+                        }
+                    }
+                }
+
+                &__contact {
+                    color: #ECEFE8;
+                    font-family: 'MonumentGrotesk-Semi-Mono';
+                    font-size: 10px;
+                    line-height: 16px;
+                    margin-top: 21px;
+
+                    @media (max-width: 1440px) {
+                        font-size: 10px;
+                        line-height: 16px;
+                    }
+                    
+                    a {
+                        color: #ECEFE8;
+                        text-decoration: underline;
+                    }
+                }
+
+                &__button {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    padding: 0;
+
+                    input,
+                    button {
+                        position: relative;
+                        background: transparent;
+                        cursor: pointer;
+                        padding: 0 10px;
+                    }
+
+                    &:before {
+                        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23.04' height='8.827' viewBox='0 0 23.04 8.827'%3E%3Cg id='Grupo_480' data-name='Grupo 480' transform='translate(-372.398 -5.588)'%3E%3Cg id='Grupo_115' data-name='Grupo 115' transform='translate(372.398 7.234)'%3E%3Cline id='Línea_6' data-name='Línea 6' x2='21.602' transform='translate(0 2.767)' fill='%23fff' stroke='%23ecefe8' stroke-width='1'%3E%3C/line%3E%3Cg id='Grupo_112' data-name='Grupo 112' transform='translate(8.248 0)'%3E%3Cline id='Línea_7' data-name='Línea 7' x2='9.437' transform='translate(0 2.766)' fill='none' stroke='%23ecefe8' stroke-miterlimit='10' stroke-width='0.5'%3E%3C/line%3E%3Cg id='Grupo_111' data-name='Grupo 111' transform='translate(8.379)'%3E%3Cpath id='Trazado_46' data-name='Trazado 46' d='M798.756,540.39a17.6,17.6,0,0,0-4.975,2.768l1-2.768-1-2.767A17.567,17.567,0,0,0,798.756,540.39Z' transform='translate(-793.781 -537.623)' fill='%23dae0d3' stroke='%23ecefe8' stroke-width='1'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+            }
+
+            .tab {
+                width: 75%;
+                display: flex;
+                justify-content: space-between;
+                text-transform: uppercase;
+                font-family: 'MonumentGrotesk-Semi-Mono';
+
+                @include bp(baby) {
+                    display: none;
+                }
+                
+                li {
+                    display: block;
+                    position: relative;
+                    
+                    .opac {
+                        opacity: 0.7;
+                    }
+
+                    a {
+                        font-size: 12px;
+                        line-height: 30px;
+                        display: block;
+                        color: #DAE0D3;
+                        text-decoration: none;
+
+                        @media (max-width: 1440px) {
+                            font-size: 12px;
+                        }
+                        
+                        @media (max-width: 1024px) {
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &_allrights {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 11px;
+            margin-top: 100px;
+            text-transform: uppercase;
+
+            @media (max-width: 1440px) {
+                font-size: 11px;
+            }
+
+            @media (max-width: 1024px) {
+                font-size: 10px;
+            }
+
+            @include bp(baby) {
+                display: block;
+                font-size: 9px;
+            }
+
+            .date {
+                @include bp(baby) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

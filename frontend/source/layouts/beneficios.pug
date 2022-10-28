@@ -1,0 +1,15 @@
+extends extends/base
+    
+block content
+    - header_white = false
+    - pestana_beneficios = 'active'
+
+    .beneficios
+        include extends/header
+        include includes/beneficios/section-01
+        include includes/beneficios/section-02
+        include includes/beneficios/section-03
+        include extends/modal-beneficios
+    include extends/footer
+    
+block bottom

@@ -1,0 +1,15 @@
+extends extends/base
+    
+block content
+    - header_white = false
+    - pestana_clientes = 'active'
+
+    .clientes
+        include extends/header
+        include includes/clientes/banner
+        include includes/clientes/section-01
+        //- include includes/clientes/section-02
+        //- include includes/clientes/section-03
+    include extends/footer
+    
+block bottom

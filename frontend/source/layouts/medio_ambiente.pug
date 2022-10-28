@@ -1,0 +1,14 @@
+extends extends/base
+    
+block content
+    - header_white = true
+    - pestana_medio = 'active'
+
+    .medio_ambiente
+        include extends/header
+        include includes/medio_ambiente/banner
+        include includes/medio_ambiente/section-1
+        include includes/medio_ambiente/section-2
+    include extends/footer
+    
+block bottom

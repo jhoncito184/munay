@@ -1,0 +1,22 @@
+.beneficios__section-02
+    .beneficios__section-02_box
+        picture
+            source(srcset="images/bottle_clean_mobile.png" media="(max-width: 767px) and (orientation: portrait)")
+            source(srcset="images/bottle_clean_mobile.png" media="(max-width: 767px) and (orientation: landscape)")
+            source(srcset="images/bottle_clean.png" media="(min-width: 768px) and (max-width: 1000px)")
+            source(srcset="images/bottle_clean.png" media="(min-width: 1001px) and (max-width: 1440px)")
+            source(srcset="images/bottle_clean.png" media="(min-width: 1441px)")
+            img(src="images/bottle_clean.png").picture
+        
+        .logo 
+            img#logo_image(src="images/logo_bottle.png", alt="")
+    .beneficios__section-02_box
+        .content
+            .content__title (vi) Personalización de botellas
+            .content__subtitle
+                | Munay se acomoda a la imagen de cada local comercial, brindándole la oportunidad de colocar sus gráficas de marca en la botella. Esto le permite a los locales comerciales tener mayor presencia de su identidad visual en la experiencia de sus comensales.
+            .content__upload
+                img(src="images/ico-image.svg", alt="")
+                .file-upload
+                    span Ingresa tu logo aquí
+                    input#upload-btn.upload(type='file' accept=".jpg, .jpeg, .png, .bmp, .tif")

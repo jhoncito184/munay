@@ -1,0 +1,74 @@
+.beneficios__section-01
+    .beneficios__section-01_box
+        .content
+            .content__title (Nuestros beneficios)
+            .content__subtitle
+                | Munay ofrece una gran cantidad de beneficios que trascienden las necesidades básicas del público de tener un agua de extrema calidad, sino que a su vez se enfoca en el consumo responsable y en el apoyo al medio ambiente. Posicionándose como una marca que apoya a la tierra, a los locales y al consumidor final. 
+    .beneficios__section-01_box
+        .image 
+            img#tab-01-img(src="images/beneficios_01.png", alt="")
+            img#tab-02-img(src="images/beneficios_02.png", alt="")
+            img#tab-03-img(src="images/beneficios_03.png", alt="")
+            img#tab-04-img(src="images/beneficios_04.png", alt="")
+            img#tab-05-img(src="images/beneficios_05.png", alt="")
+            img#tab-06-img(src="images/beneficios_06.png", alt="")
+            img#tab-07-img(src="images/beneficios_07.png", alt="")
+
+        - 
+            beneficios_data = [
+                {
+                    tab_name: 'tab-01',
+                    number: '(i)',
+                    question: 'Brinda un agua purificada, fresca y de calidad a tus clientes',
+                    answer: 'Nuestros equipos brindan de manera instantánea un agua purificada, fresca, con opciones de temperatura ambiente, helada y helada gasificada',
+                },
+                {
+                    tab_name: 'tab-02',
+                    number: '(ii)',
+                    question: 'Incrementa tus márgenes de ganancia',
+                    answer: 'Ahorro de costes en compras de agua embotellada (natural & gasificada). Con el servicio Munay puedes ofrecer agua pura e ilimitada a tus clientes lo cual crea ahorros en la factura mensual. La versatilidad de Munay brinda importantes oportunidades de ganancias para cualquier lugar.',
+                },
+                {
+                    tab_name: 'tab-03',
+                    number: '(iii)',
+                    question: 'Ahorro de espacios de refrigeración',
+                    answer: 'Creamos ahorros significativos de espacio en los refrigeradores ya que los purificadores dispensan agua helada y helada gasificada, así como agua de temperatura ambiente. Munay ayuda a eliminar los problemas de almacenamiento que el agua embotellada ocasiona, así como podrás reducir el inconveniente del servicio de entrega de botellas',
+                },
+                {
+                    tab_name: 'tab-04',
+                    number: '(iv)',
+                    question: 'Simplificación de la logística',
+                    answer: 'Al contar con una fuente ilimitada de agua purificada, ya no necesitas realizar compras recurrentes de botellas de agua. Eliminando así el riesgo de que el proveedor entregue tarde el pedido o tengan que pagar de más para cubrirse con exceso de stock en caso la demanda de agua aumente en el mes',
+                },
+                {
+                    tab_name: 'tab-05',
+                    number: '(v)',
+                    question: 'Innova tu oferta de bebidas y elimina  desperdicios en coctelería',
+                    answer: 'Nuestros equipos brindan una fuente ilimitada de agua helada y helada gasificada ideal para preparar cocteles y demás bebidas afrutadas. Ayudamos también no crear desperdicios ya que puede dispensar la cantidad exacta del agua necesaria para su coctel en vez de tener que abrir una botella nueva y descartar el agua.',
+                },
+                {
+                    tab_name: 'tab-06',
+                    number: '(vi)',
+                    question: 'Solución amigable con el medio ambiente',
+                    answer: 'Ayuda a proteger al medio ambiente al crear una reducción en emisiones de vidrio y plásticos de un solo uso lo cual disminuye la huella de carbono del establecimiento y libra a los mares y ríos de basura contaminante. Añade valor a tu programa de responsabilidad social corporativa reduciendo los residuos de plástico',
+                },
+                {
+                    tab_name: 'tab-07',
+                    number: '(vii)',
+                    question: 'Servicio al cliente',
+                    answer: 'Nosotros nos encargamos de todos los cambios de filtros, cambio de Co2 y mantenimientos recurrentes preventivos para que el equipo instalado siempre mantenga un funcionamiento óptimo.',
+                },
+            ]
+        
+        .list
+            each data in beneficios_data
+                button(tab-name=data.tab_name).accordion
+                    .accordion__number !{data.number}
+                    .accordion__text !{data.question}
+                .panel
+                    p !{data.answer}
+        .buttons
+            each buttons in beneficios_data
+                button(class='trigger' data-tab=buttons.tab_name) 
+                    .buttons__number !{buttons.number}
+                    .buttons__text !{buttons.question}

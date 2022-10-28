@@ -1,0 +1,189 @@
+@import "variables";
+
+body {
+    font-family: $font-text;
+    font-weight: normal;
+    color: $text-color;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    a {
+        color: $link-color;
+        text-decoration: none;
+        outline: 0 none;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+        &:hover { color: $link-color-hover; }
+    }
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none; }
+
+::-webkit-input-placeholder {
+    color: $text-color;
+}
+
+::-moz-placeholder,
+input::-moz-placeholder {
+    color: $text-color;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: $text-color;
+    opacity: 1;
+}
+
+button { border: 0 none; }
+
+/*A better looking default horizontal rule */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0; }
+
+/*Remove the gap between images and the bottom of their containers */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0 none; }
+
+
+
+/*==========================================================================
+  Helper classes
+========================================================================== */
+.relative { position: relative; }
+
+/* Absolute layers */
+.absolute { position: absolute; }
+
+.absolute-BottomLeft {
+    @extend .absolute;
+    bottom: 0;
+    left: 0; }
+
+.absolute-BottomRight {
+    @extend .absolute;
+    bottom: 0;
+    right: 0; }
+
+.absolute-TopLeft {
+    @extend .absolute;
+    left: 0;
+    top: 0; }
+
+.absolute-TopRight {
+    @extend .absolute;
+    right: 0;
+    top: 0; }
+
+
+/* Alignment */
+.align-left { text-align: left; }
+
+.align-right { text-align: right; }
+
+.align-center { text-align: center; }
+
+
+/* Texts Format */
+.bold { font-weight: 500; }
+.regular { font-weight: normal; }
+.italic { font-style: italic; }
+
+
+/* Limit inside layer */
+.limiter {
+    margin: 0 auto;
+    position: relative;
+    max-width: $width-limiter;
+}
+
+.hidden { display: none !important; }
+
+.invisible { visibility: hidden; }
+.visible { visibility: visible; }
+
+.opacity-show { opacity: 1.0 !important; }
+.transparent { opacity: 0.5; }
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+.block { display: block; }
+.overlayer { overflow: hidden; }
+
+
+/* Float side */
+.side-left { float: left; }
+.side-right { float: right; }
+
+
+/* Clear both */
+.clear { clear: both; }
+
+.error-inline {
+    bottom: -26px;
+    color: rgb(174, 4, 4);
+    font-size: 0.7em;
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* Reset ul, ol styles and children li */
+.unstyled, .unstyled-list {
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.unstyled-list > li {
+    float: left;
+    list-style: none;
+}
+
+
+
+/*==========================================================================
+  Font Styles
+========================================================================== */
+h1, h2, h3 {
+    font-family: $font-title;
+    font-weight: 300;
+}
+
+.buttonWsp {
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+
+    &:hover {
+        color: #FFF;
+    }
+
+    @include bp(baby) {
+        right: 20px;
+    }
+}
+
+.my-buttonWsp {
+	margin-top:16px;
+}

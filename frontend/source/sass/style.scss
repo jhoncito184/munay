@@ -1,0 +1,23 @@
+@import "globals/normalize";
+@import "globals/typography";
+@import "globals/variables";
+@import "globals/mixins";
+@import "globals/global";
+
+@import "extras/pure";
+
+@import "modules/layout";
+@import "modules/mediaqueries";
+
+@import "extras/slick";
+@import "modules/extends/background";
+@import "modules/extends/header";
+@import "modules/extends/footer";
+@import "modules/extends/modal";
+
+@import "modules/sections/index";
+@import "modules/sections/beneficios";
+@import "modules/sections/medio_ambiente";
+@import "modules/sections/tecnologia";
+@import "modules/sections/clientes";
+@import "modules/sections/contacto";

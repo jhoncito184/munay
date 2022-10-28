@@ -1,0 +1,63 @@
+.modal
+    .modal-content
+        .modalBeneficios
+            - 
+                beneficios_data = [
+                    {
+                        tab_name: 'tab-01',
+                        image: 'images/beneficios_01.jpg',
+                        question: 'Brinda un agua purificada, fresca y de calidad a tus clientes',
+                        answer: 'Nuestros equipos brindan de manera instantánea un agua purificada, fresca, con opciones de temperatura ambiente, helada y helada gasificada',
+                    },
+                    {
+                        tab_name: 'tab-02',
+                        image: 'images/beneficios_02.jpg',
+                        question: 'Incrementa tus márgenes de ganancia',
+                        answer: 'Ahorro de costes en compras de agua embotellada (natural & gasificada). Con el servicio Munay puedes ofrecer agua pura e ilimitada a tus clientes lo cual crea ahorros en la factura mensual. La versatilidad de Munay brinda importantes oportunidades de ganancias para cualquier lugar.',
+                    },
+                    {
+                        tab_name: 'tab-03',
+                        image: 'images/beneficios_03.jpg',
+                        question: 'Ahorro de espacios de refrigeración',
+                        answer: 'Creamos ahorros significativos de espacio en los refrigeradores ya que los purificadores dispensan agua helada y helada gasificada, así como agua de temperatura ambiente. Munay ayuda a eliminar los problemas de almacenamiento que el agua embotellada ocasiona, así como podrás reducir el inconveniente del servicio de entrega de botellas',
+                    },
+                    {
+                        tab_name: 'tab-04',
+                        image: 'images/beneficios_04.jpg',
+                        question: 'Simplificación de la logística',
+                        answer: 'Al contar con una fuente ilimitada de agua purificada, ya no necesitas realizar compras recurrentes de botellas de agua. Eliminando así el riesgo de que el proveedor entregue tarde el pedido o tengan que pagar de más para cubrirse con exceso de stock en caso la demanda de agua aumente en el mes',
+                    },
+                    {
+                        tab_name: 'tab-05',
+                        image: 'images/beneficios_05.jpg',
+                        question: 'Innova tu oferta de bebidas y elimina  desperdicios en coctelería',
+                        answer: 'Nuestros equipos brindan una fuente ilimitada de agua helada y helada gasificada ideal para preparar cocteles y demás bebidas afrutadas. Ayudamos también no crear desperdicios ya que puede dispensar la cantidad exacta del agua necesaria para su coctel en vez de tener que abrir una botella nueva y descartar el agua.',
+                    },
+                    {
+                        tab_name: 'tab-06',
+                        image: 'images/beneficios_06.jpg',
+                        question: 'Solución amigable con el medio ambiente',
+                        answer: 'Ayuda a proteger al medio ambiente al crear una reducción en emisiones de vidrio y plásticos de un solo uso lo cual disminuye la huella de carbono del establecimiento y libra a los mares y ríos de basura contaminante. Añade valor a tu programa de responsabilidad social corporativa reduciendo los residuos de plástico',
+                    },
+                    {
+                        tab_name: 'tab-07',
+                        image: 'images/beneficios_07.jpg',
+                        question: 'Servicio al cliente',
+                        answer: 'Nosotros nos encargamos de todos los cambios de filtros, cambio de Co2 y mantenimientos recurrentes preventivos para que el equipo instalado siempre mantenga un funcionamiento óptimo.',
+                    },
+                ]
+            
+            .modalBeneficios__image
+                each data in beneficios_data
+                    img(src=data.image, alt="" data-tab=data.tab_name)
+
+            .modalBeneficios__text
+                .modalBeneficios__text_title
+                    each title in beneficios_data
+                        .content(data-tab=title.tab_name) !{title.question}
+
+                .modalBeneficios__text_subtitle 
+                    each subtitle in beneficios_data
+                        .content(data-tab=subtitle.tab_name) !{subtitle.answer}
+                    
+                span.close-button Anterior

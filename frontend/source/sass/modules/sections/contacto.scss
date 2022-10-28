@@ -1,0 +1,581 @@
+.contacto {
+    position: relative;
+
+    @include bp(baby) {
+        padding-bottom: 50px;
+    }
+    
+    header {
+        @include bp(baby) {
+            background: transparent;
+            position: absolute;
+
+            .head-bar {
+                position: relative;
+                background: transparent;
+
+                .icon_hamburguer {
+                    .hamburguer {
+                        background: #000;
+
+                        &:after {
+                            background: #000;
+                        }
+
+                        &:before {
+                            background: #000;
+                        }
+                    }
+                }
+
+                .icon_hamburguer.active {
+                    .hamburguer {
+                        &:after {
+                            background: #FFF;
+                        }
+
+                        &:before {
+                            background: #FFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .picture {
+        position: absolute;
+        width: 100%;
+
+        @media (max-width: 2560px) {
+            width: auto;
+        }
+
+        @media (max-width: 1920px) {
+            width: auto;
+        }
+
+        @media (max-width: 768px) {
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+
+    &__banner {
+        font-family: 'ACaslonPro-Regular';
+        position: relative;
+        height: 100vh;
+        padding: 0 80px;
+        overflow: hidden;
+
+        @media (max-width: 1024px) {
+            padding: 0 40px;
+            height: 75vh;
+        }
+
+        @media (max-width: 768px) {
+            height: 90vh;
+            align-items: flex-end;
+            padding: 0 30px;
+        }
+
+        @media (max-width: 420px) {
+            height: 97vh;
+            align-items: flex-end;
+            padding: 0 30px;
+            margin-top: 0;
+        }
+
+        .picture {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            object-position: inherit;
+
+            @include bp(baby) {
+                display: none;
+            }
+        }
+
+        &_content {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            color: #44534A;
+
+            @media (max-width: 1520px) {
+            }
+
+            @media (max-width: 1440px) {
+            }
+
+            @media (max-width: 1024px) {
+            }
+
+            @include bp(baby) {
+                align-items: flex-end;
+                bottom: 60px;
+                margin-bottom: 40px;
+                justify-content: flex-start;
+            }
+
+            .box {
+                @include bp(baby) {
+                    width: 100%;
+                }
+
+                &__phone {
+                    font-family: 'ACaslonPro-Regular';
+                    font-size: 70px;
+                    line-height: 80px;
+                    color: #44534A;
+
+                    @media (max-width: 1520px) {
+                        font-size: 70px;
+                        line-height: 80px;
+                    }
+        
+                    @media (max-width: 1440px) {
+                        font-size: 70px;
+                        line-height: 80px;
+                    }
+        
+                    @media (max-width: 1024px) {
+                        font-size: 50px;
+                        line-height: 50px;
+                    }
+
+                    @include bp(baby) {
+                        font-size: 40px;
+                    }
+
+                    @media (max-width: 320px) {
+                        font-size: 38px;
+                    }
+
+                    &:hover {
+                        color: #44534A;
+                    }
+                }
+
+                &__title {
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+
+                    @media (max-width: 1440px) {
+                        font-size: 20px;
+                    }
+
+                    @media (max-width: 1024px) {
+                        font-size: 18px;
+                    }
+
+                    @include bp(baby) {
+                        font-size: 20px;
+                        line-height: 28px;
+                    }
+                }
+
+                &__subtitle {
+                    font-family: 'MonumentGrotesk-Semi-Mono';
+                    font-size: 14px;
+                    line-height: 20px;
+
+                    @media (max-width: 1440px) {
+                        font-size: 14px;
+                        line-height: 19px;
+                    }
+
+                    @media (max-width: 1024px) {
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+
+                    @include bp(baby) {
+                        font-size: 11px;
+                        line-height: 17px;
+                    }
+
+                    @media (max-width: 320px) {
+                        font-size: 9px;
+                        line-height: 15px;
+                    }
+                }
+
+                &__form {
+                    .affiliate {
+                        margin-top: 30px;
+                        display: block;
+                        width: 70%;
+        
+                        @include bp(baby) {
+                            width: 100%;
+                        }
+
+                        @media (max-width: 320px) {
+                            margin-top: 10px;
+                        }
+        
+                        &__input {
+                            font-family: 'MonumentGrotesk-Semi-Mono';
+                            position: relative;
+                            width: 90%;
+                            border-bottom: 1px solid #707070;
+                            height: 35px;
+        
+                            @include bp(baby) {
+                                width: 100%;
+                            }
+        
+                            input {
+                                width: 85%;
+                                font-family: 'MonumentGrotesk-Semi-Mono';
+                                background: transparent;
+                                border: 0;
+                                padding: 0;
+                                font-size: 12px;
+
+                                @media (max-width: 1024px) {
+                                    font-size: 12px;
+                                }
+
+                                @media (max-width: 1024px) {
+                                    font-size: 10px;
+                                }
+        
+                                &::placeholder {
+                                    color: #A8B39B;
+                                }
+                            }
+                        }
+        
+                        &__contact {
+                            color: #707070;
+                            font-family: 'MonumentGrotesk-Semi-Mono';
+                            font-size: 9px;
+                            line-height: 16px;
+                            margin-top: 21px;
+        
+                            @media (max-width: 1440px) {
+                                font-size: 9px;
+                                line-height: 16px;
+                            }
+
+                            @media (max-width: 320px) {
+                                margin-top: 10px;
+                            }
+                            
+                            a {
+                                color: #707070;
+                                text-decoration: underline;
+                            }
+                        }
+        
+                        &__button {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            padding: 0;
+                            
+                            input,
+                            button {
+                                position: relative;
+                                background: transparent;
+                                cursor: pointer;
+                                padding: 0 10px;
+
+                            }
+                            &:before {
+                                content: url("data:image/svg+xml,%3Csvg id='Grupo_480' xmlns='http://www.w3.org/2000/svg' data-name='Grupo 480' width='20.748' height='4.827' viewBox='0 0 20.748 4.827'%3E%3Cline id='Línea_7' data-name='Línea 7' x2='17.332' transform='translate(0 2.413)' fill='none' stroke='%23000' stroke-miterlimit='10' stroke-width='0.5'%3E%3C/line%3E%3Cg id='Grupo_111' data-name='Grupo 111' transform='translate(16.409)'%3E%3Cpath id='Trazado_46' data-name='Trazado 46' d='M798.12,540.036a15.348,15.348,0,0,0-4.339,2.414l.873-2.414-.873-2.413A15.32,15.32,0,0,0,798.12,540.036Z' transform='translate(-793.781 -537.623)' fill='%2344534a'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+                                position: absolute;
+                            }
+                            
+                            svg {
+                                position: absolute;
+                                bottom: 20px;
+                                right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &_allrights {
+            position: absolute;
+            color: #44534A;
+            bottom: 50px;
+            font-size: 10px;
+            text-transform: uppercase;
+
+            @include bp(baby) {
+                position: relative;
+                display: block;
+                font-size: 9px;
+                bottom: 75px;
+            }
+        }
+        
+        &_site {
+            position: absolute;
+            color: #44534A;
+            bottom: 50px;
+            right: 80px;
+            font-size: 11px;
+            text-transform: uppercase;
+
+            @include bp(baby) {
+                position: relative;
+                display: block;
+                left: 0;
+                right: inherit;
+                font-size: 9px;
+                bottom: 70px;
+            }
+        }
+    }
+
+    &__section-01 {
+        padding: 80px;
+        position: relative;
+        color: #44534A;
+
+        @media (max-width: 1520px) {
+            padding: 20px 80px 0;
+        }
+
+        @media (max-width: 1440px) {
+            padding: 20px 40px 0;
+        }
+
+        @media (max-width: 1024px) {
+            padding: 40px;
+        }
+
+        @include bp(baby) {
+            display: block;
+            padding: 0;
+        }
+
+        &_content {
+            display: flex;
+            align-items: center;
+
+            @include bp(baby) {
+                display: block;
+            }
+        
+            .box {
+                width: 50%;
+                position: relative;
+                display: flex;
+                justify-content: center;
+
+                @include bp(baby) {
+                    width: 100%;
+                }
+
+                &__list {
+                    position: relative;
+                    max-width: 600px;
+
+                    @include bp(baby) {
+                        margin-top: 25px;
+                    }
+
+                    &_title {
+                        font-family: 'ACaslonPro-Regular';
+                        color: #44534A;
+                        font-size: 25px;
+                        line-height: 35px;
+                        margin-bottom: 20px;
+
+                        @include bp(baby) {
+                            display: none;
+                        }
+                    }
+
+                    &_accordion {
+                        background: #E4E8DF;
+                    }
+
+                    .accordion {
+                        font-family: 'ACaslonPro-Regular';
+                        position: relative;
+                        color: #44534A;
+                        background: transparent;
+                        cursor: pointer;
+                        padding: 15px 80px 0 80px;
+                        width: 100%;
+                        border: none;
+                        text-align: justify;
+                        outline: none;
+                        font-size: 25px;
+                        letter-spacing: 0.5px;
+                        transition: 0.4s;
+                        border-bottom: 1px solid #A0A0A0;
+                        opacity: 0.5;
+        
+                        @media (max-width: 1440px) {
+                            font-size: 25px;
+                            padding: 25px 80px 0 80px;
+                        }
+        
+                        @media (max-width: 1024px) {
+                            font-size: 19px;
+                            padding: 20px 50px 0 80px;
+                        }
+        
+                        @include bp(baby) {
+                            font-size: 20px;
+                            line-height: 120%;
+                            padding: 20px 30px 0 80px;
+                            opacity: 1;
+                        }
+                        
+                        &__text {
+                            opacity: 0.5;
+                            letter-spacing: 4px;
+                        }
+
+                    }
+                    
+                    .accordion:last-child {
+                        padding: 20px 30px;
+                    }
+        
+                    .active {
+                        border-radius: 0;
+                        border: 0;
+                        background: #C9D2C0;
+                        color: #44534A;
+                        opacity: 1;
+
+                        .accordion__text {
+                            opacity: 1;
+                        }
+                    }
+            
+                    .panel {
+                        position: relative;
+                        background-color: #C9D2C0;
+                        max-height: 0;
+                        overflow: hidden;
+                        transition: max-height 0.2s ease-out;
+                        padding: 0 80px;
+        
+                        @include bp(baby) {
+                            padding: 0 30px;
+                        }
+            
+                        p {
+                            font-family: 'ACaslonPro-Regular';
+                            font-size: 25px;
+                            line-height: 30px;
+                            text-align: justify;
+                            margin-top: 0;
+                            margin-bottom: 10px;
+
+                            @media (max-width: 1440px) {
+                                font-size: 25px;
+                            }
+
+                            @media (max-width: 1024px) {
+                                font-size: 19px;
+                            }
+
+                            @include bp(baby) {
+                                font-size: 18px;
+                                line-height: 22px;
+                            }
+                        }
+                    }
+                }
+
+                &__image {
+                    text-align: center;
+
+                    img {
+                        @media (max-width: 1024px) {
+                            width: 80%;
+                        }
+
+                        @include bp(baby) {
+                            width: 100%;
+                        }
+                    }
+
+                    .picture {
+                        position: relative;
+                        width: auto;
+
+                        @media (max-width: 1024px) {
+                            width: 80%;
+                        }
+
+                        @include bp(baby) {
+                            width: 100%;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__section-02 {
+        padding: 80px;
+        position: relative;
+        color: #44534A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: wrap;
+
+        @media (max-width: 1520px) {
+            padding: 80px;
+        }
+
+        @media (max-width: 1440px) {
+            padding: 80px;
+        }
+
+        @media (max-width: 1024px) {
+            padding: 40px;
+        }
+
+        @include bp(baby) {
+            display: block;
+            padding: 100px 0;
+        }
+
+        &_box {
+            width: 100%;
+            font-family: 'ACaslonPro-Regular';
+            font-size: 20px;
+            color: #ECEFE8;
+            text-align: center;
+
+            @media (max-width: 1024px) {
+                font-size: 15px;
+                line-height: 20px;
+            }
+
+            a {
+                color: #44534A;
+                text-decoration: underline;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: #44534A;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,14 @@
+extends extends/base
+    
+block content
+    - header_white = false
+    - pestana_tecnologia = 'active'
+
+    .tecnologia
+        include extends/header
+        include includes/tecnologia/banner
+        include includes/tecnologia/section-01
+        include includes/tecnologia/section-02
+    include extends/footer
+    
+block bottom

@@ -1,0 +1,34 @@
+picture
+    source(srcset="images/bck_contacto_mobile.png" media="(max-width: 767px) and (orientation: portrait)")
+    source(srcset="images/bck_contacto_mobile.png" media="(max-width: 767px) and (orientation: landscape)")
+    source(srcset="images/bck_contacto.png" media="(min-width: 768px) and (max-width: 1000px)")
+    source(srcset="images/bck_contacto.png" media="(min-width: 1001px) and (max-width: 1440px)")
+    source(srcset="images/bck_contacto.png" media="(min-width: 1441px)")
+    img(src="images/bck_contacto.png").picture
+.contacto__banner
+    .contacto__banner_content
+        .box 
+            a(href="tel:51014801087").box__phone + 51 01 480-1087
+            .box__subtitle
+                | Teléfono de contacto y atención al cliente
+            .box__form 
+                form.affiliate(id="register_email" name="register_email" role="form" action="sendMail.php" method="post")
+                    .affiliate__input 
+                        input(type="text" name="name_contact" placeholder="Nombres" required)#name_contact
+                    .affiliate__input 
+                        input(type="text" name="empresa_contact" placeholder="Nombre de Empresa" required)#empresa_contact
+                    .affiliate__input 
+                        input(type="text" name="telf_contact" placeholder="Teléfono" required)#telf_contact
+                    .affiliate__input 
+                        input(type="email" name="email_contact" placeholder="ej.hola@munay.com" required)#email_contact
+                        .affiliate__button
+                            input(class="actualizar_datos" type="submit" name="submit" value='')#submit
+
+                    .affiliate__contact 
+                        | O sigamos en Contacto a través de nuestras redes sociales
+                        | #[br] Síguenos en #[a(href="https://m.facebook.com/aguamunay-103392141613239/posts/?ref=page_internal&mt_nav=0" target="_blank") Facebook]  ,  #[a(href="https://www.instagram.com/aguamunay/?hl=es" target="_blank") Instagram]
+
+    //- .contacto__banner_allrights
+    //-     | 2021, Munay. All Rights Reserved.
+    .contacto__banner_site
+        | © Site by Sandhaus, 2021

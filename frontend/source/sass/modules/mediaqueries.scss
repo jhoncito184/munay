@@ -1,0 +1,40 @@
+@import "../globals/variables";
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (min-width : 320px)
+and (max-width : 679px) {
+}
+
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 320px)
+and (max-width : 679px)
+and (orientation : landscape) {
+}
+
+
+/* Tablets (portrait) ----------- */
+@media only screen
+and (min-width : 680px)
+and (max-width : 1024px) {
+}
+
+
+/* Tablets (landscape) ----------- */
+@media only screen
+and (min-width : 680px)
+and (max-width : 1024px)
+and (orientation : landscape) {
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1025px) {
+}
+
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1920px) {
+}

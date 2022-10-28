@@ -1,0 +1,39 @@
+doctype html
+html(lang="es-ES")
+    head
+        meta(charset='utf-8')
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title= "Munay | Agua Purificada"
+        meta(name='description', content="")
+        meta(name='keywords', content="")
+
+        // Theme color (Only Chrome Mobile)
+        meta(name="theme-color", content="#db5945")
+
+        // Facebook meta tags
+        meta(property='og:title', content="")
+        meta(property='og:description', content="")
+        meta(property='og:type', content="Munay | Agua Purificada")
+        meta(property='og:url', content="")
+        meta(property='og:image', content="")
+
+        //Favicon
+        link(rel='shortcut icon', type='image/x-icon', href="images/favicon.png")
+
+        //Canonical
+        link(rel="canonical", href="http://localhost")
+        link(rel='stylesheet', href='css/style.css')
+        link(rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css")
+        link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+
+    body
+        block content
+        block bottom
+
+        script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
+        // jQuery Librerias
+        script(src='js/vendor/vendor_all.js', type='text/javascript')
+
+        // Compilado de application.js
+        //- script(src='http://localhost/munay/frontend/source/javascript/application.js')
+        script(src='js/bundle.js')

@@ -1,0 +1,109 @@
+
+/* Breakpoints */
+@mixin breakpoint($point) {
+
+    @if $point == dad {
+      @media (max-width: map-get($container-max-widths, 'xxl')) { @content; }
+    }
+  
+    @else if $point == mom {
+      @media (max-width: map-get($container-max-widths, 'lg')) { @content; }
+    }
+  
+    @else if $point == baby {
+      @media (max-width: map-get($container-max-widths, 'md'))  { @content; }
+    }
+  
+    @else if $point == minibaby {
+      @media (max-width: map-get($container-max-widths, 'sm'))  { @content; }
+    }
+  }
+  
+  @mixin reverse-breakpoint($point) {
+  
+    @if $point == dad {
+      @media (min-width: map-get($container-max-widths, 'xl')) { @content; }
+    }
+  
+    @else if $point == mom {
+      @media (min-width: map-get($container-max-widths, 'lg')) { @content; }
+    }
+  
+    @else if $point == baby {
+      @media (min-width: map-get($container-max-widths, 'md'))  { @content; }
+    }
+  
+    @else if $point == minibaby {
+      @media (min-width: map-get($container-max-widths, 'sm'))  { @content; }
+    }
+  }
+  
+  @mixin between($point, $point2) {
+  
+    @if $point == dad {
+      $point: map-get($container-max-widths, 'xxl');
+    }
+  
+    @else if $point == mom {
+      $point: map-get($container-max-widths, 'lg');
+    }
+  
+    @else if $point == baby {
+      $point: map-get($container-max-widths, 'md');
+    }
+  
+    @else if $point == minibaby {
+      $point: map-get($container-max-widths, 'sm');
+    }
+  
+    // Point 2
+    @if $point2 == dad {
+      $point2: map-get($container-max-widths, 'xxl');
+    }
+  
+    @else if $point2 == mom {
+      $point2: map-get($container-max-widths, 'lg');
+    }
+  
+    @else if $point2 == baby {
+      $point2: map-get($container-max-widths, 'md');
+    }
+  
+    @else if $point2 == minibaby {
+      $point2: map-get($container-max-widths, 'sm');
+    }
+  
+    @media (min-width: $point)
+       and (max-width: $point2) {
+        @content;
+    }
+  }
+  
+  // Alias
+  @mixin bp($args...) {
+      @include breakpoint($args...){
+          @content;
+      }
+  }
+  
+  @mixin rbp($args...) {
+      @include reverse-breakpoint($args...){
+          @content;
+      }
+  }
+  
+  @mixin bw($args...) {
+    @include between($args...){
+      @content;
+    }
+  }
+  
+  // Usage
+  /*
+      @include rbp(dad){
+          body {
+              background-color: blue !important;
+          }
+      }
+  */
+  

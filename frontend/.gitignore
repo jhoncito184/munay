@@ -1,0 +1,16 @@
+node_modules/
+.sass-cache/
+.idea/
+env/
+docs/
+frontend/node_modules/
+
+.DS_Store
+*.tmp
+*.pyc
+
+conf.json
+yarn.lock
+
+build/
+stats.json

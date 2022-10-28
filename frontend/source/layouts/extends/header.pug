@@ -1,0 +1,81 @@
+nav#responsive
+    ul#main2
+        li
+            a.link_pestana(href='index.html' class=pestana_nosotros) Nosotros
+        li
+            a.link_pestana(href='beneficios.html' class=pestana_beneficios) Beneficios
+        li
+            a.link_pestana(href='medio_ambiente.html' class=pestana_medio) Medio AMbiente
+        li
+            a.link_pestana(href='tecnologia.html' class=pestana_tecnologia) Tecnología
+        li
+            a.link_pestana(href='clientes.html' class=pestana_clientes) Clientes y Afiliados
+        li
+            a.link_pestana(href='contacto.html' class=pestana_contacto) Contacto
+        li 
+            .info 
+                .info__contact 
+                    .info__contact_text Número de contacto 
+                    a(href="tel:5114801087").info__contact_number +51 1 480-1087
+                .info__social
+                    | o sigamos en #[a(href="contacto.html") Contacto] a través de #[br] nuestras redes sociales
+                    p Síguenos en #[a(href="https://m.facebook.com/aguamunay-103392141613239/posts/?ref=page_internal&mt_nav=0" target="_blank") Facebook]  ,  #[a(href="https://www.instagram.com/aguamunay/?hl=es" target="_blank") Instagram]
+                .info__allrights 
+                    | © 2021, Munay. All Rights Reserved.  
+
+header
+    .slim
+        .slim__text Contáctate con nosotros y aprovecha una prueba gratuita de Munay.
+    .head-bar
+        .logo
+            if (header_white)
+                a(href="/").logo__desktop
+                    img(src="./images/logo_munay_white.svg", alt="")
+                    .logo__desktop_address.white Lima, Perú
+                    a(href="https://www.instagram.com/aguamunay/?hl=es").logo__ig.white IG_@aguamunay
+                    a(href="tel:5114801087").logo__phone.white +51 1 480-1087
+                a(href="/").logo__mobile
+                    img(src="./images/logo_munay_white_mobile.svg", alt="")
+            else 
+                a(href="/").logo__desktop
+                    img(src="./images/logo_munay_black.svg", alt="")
+                    .logo__desktop_address Lima, Perú
+                    a(href="https://www.instagram.com/aguamunay/?hl=es").logo__ig IG_@aguamunay
+                    a(href="tel:5114801087").logo__phone +51 1 480-1087
+                a(href="/").logo__mobile
+                    img(src="./images/logo_munay_black_mobile.svg", alt="")
+        .icon_hamburguer
+            .hamburguer
+        nav#big-screen
+            ul#main
+                li
+                    if (header_white) 
+                        a.link_pestana(href='index.html' class=pestana_nosotros) Nosotros
+                    else 
+                        a.link_pestana(href='index.html' class="color_black " + pestana_nosotros) Nosotros
+                li
+                    if (header_white) 
+                        a.link_pestana(href='beneficios.html' class=pestana_beneficios) Beneficios
+                    else 
+                        a.link_pestana(href='beneficios.html' class="color_black " + pestana_beneficios) Beneficios
+                li
+                    if (header_white) 
+                        a.link_pestana(href='medio_ambiente.html' class=pestana_medio) Medio Ambiente
+                    else
+                        a.link_pestana(href='medio_ambiente.html' class="color_black " + pestana_medio) Medio Ambiente
+                li
+                    if (header_white) 
+                        a.link_pestana(href='tecnologia.html' class=pestana_tecnologia) Tecnología
+                    else
+                        a.link_pestana(href='tecnologia.html' class="color_black " + pestana_tecnologia) Tecnología
+                li
+                    if (header_white)
+                        a.link_pestana(href='clientes.html' class=pestana_clientes) Clientes y Afiliados
+                    else
+                        a.link_pestana(href='clientes.html' class="color_black " + pestana_clientes) Clientes y Afiliados
+        .contact 
+            if (header_white)
+                a(href="contacto.html") CONTACTO
+            else
+                a(href="contacto.html" class="color_black " + pestana_contacto) CONTACTO
+

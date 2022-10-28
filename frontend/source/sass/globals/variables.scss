@@ -1,0 +1,51 @@
+// Default max limits widths
+$container-max-widths: (
+        sm: 540px, // minibaby
+        md: 992px, // baby
+        lg: 993px, // mom
+        xl: 1280px // dad
+) !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: map-get($container-max-widths, 'sm'),
+  md: map-get($container-max-widths, 'md'),
+  lg: map-get($container-max-widths, 'lg'),
+  xl: map-get($container-max-widths, 'xl')
+) !default;
+
+$width-limiter: 980px;
+
+$font-title: 'Myriad-pro';
+$font-text: 'Sans-serif';
+
+$link-color: #005577;
+$link-color-hover: #0055ff;
+$text-color: #262626;
+
+$border-color: #00FB67;
+$title-color: #CA9B41;
+
+$color-light-blue-1: #009AF0;
+$color-light-blue-2: #007bff;
+
+$color-green-web: #6abf01;
+$color-green-web-1:#6abf0138;
+// $color-green-web-2: #6abf011c;
+$color-green-web-2:#E5EFD6;
+$color-green-web-3: #447309;
+$color-green-web-4: #2db34a;
+
+$color-yellow: #FFD142;
+$color-red: #f3202a;
+
+$color-black-web: #262626;
+$color-black-web-2: #212121;
+$color-white: #FFFFFF;
+
+$color-gray-1: #E8E6E6;
+$color-gray-2: #a2a2a2;
+$color-gray-3: #969696;
+$color-gray-4: #A0A0A0;
+
+$color-green-1: #F7FFFD;
